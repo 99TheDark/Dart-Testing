@@ -1,8 +1,10 @@
 import 'dart:math';
 
+// No 'new' keyword
+var rng = Random();
+
 dynamic getRandom(List<dynamic> list) {
-  var rand = Random();
-  return list[rand.nextInt(list.length)];
+  return list[rng.nextInt(list.length)];
 }
 
 void main() {
