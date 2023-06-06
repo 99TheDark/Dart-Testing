@@ -17,8 +17,10 @@ class Person {
     return _age;
   }
 
+  @override
   String toString() {
-    return 'Some ${_age}-year-old named ${_name}';
+    // I guess like Julia, you can skip the {} / ()
+    return 'Some $_age-year-old named $_name';
   }
 }
 
