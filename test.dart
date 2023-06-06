@@ -1,7 +1,8 @@
 import 'dart:math';
 
-// No 'new' keyword
-var rng = Random();
+// No 'new' keyword is needed
+// Getting errors using const vs final, don't really get it
+final rng = Random();
 
 dynamic getRandom(List<dynamic> list) {
   return list[rng.nextInt(list.length)];
